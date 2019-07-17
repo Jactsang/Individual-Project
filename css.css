@@ -1,0 +1,256 @@
+body{
+
+    margin:0;
+    overflow-x: hidden;
+    background-color: #e0bc21;
+}
+
+/*@font-face {
+    font-family: 'ReenieBeanie';
+    src: url(./ReenieBeanie-Regular.ttf) format("opentype");
+  }*/
+
+.container{
+
+    /*border: 3px solid red;*/
+    width: 100vw;
+    
+}
+
+.navbar-light .navbar-nav .nav-link{
+
+    color: #ffffff;
+}
+
+.navbar-toggler{
+
+    border-color: transparent !important;
+}
+.topSection{
+
+    background-image: url("./retro-style.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.my-row{
+
+    /*border: 3px dotted blue;*/
+    height: 92vh;
+}
+
+.my-col{
+
+    /*border: 3px solid green;*/
+}
+
+.my-col h2{
+
+    font-size: 4vw;
+    color: white;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    letter-spacing: 5px;
+    /*animation-duration: 3s;
+    animation-delay: 1s;*/
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+
+}
+
+.my-col h2 span{
+
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink{
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+
+.my-col p{
+
+    font-size: 1vw;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.my-row2 {
+
+    /*border: 3px dotted blue;*/
+    width: 100vw;
+    
+
+}
+
+video{
+
+    position: absolute;
+}
+
+#timeline{
+
+    border: 1vw solid #e0bc21;
+    margin-top: 0.8vw;
+}
+
+
+.my-row3{
+
+    /*border: 3px dotted blue;*/
+    background-color: #983636;
+}
+
+
+.timebox{
+
+    padding: 3vw;
+}
+
+.my-row4{
+
+    background-color: #e0bc21;
+    height: 15vw;
+}
+
+.year{
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive;
+    margin: 0 1vw;
+  
+}
+
+.my-col3-1-1{
+
+    border-right: 1vw solid #e0bc21;
+
+
+}
+
+
+.my-col3-2-1{
+    border-right: 1vw solid #e0bc21;
+
+
+}
+
+
+.my-col3-3-1{
+    border-right: 1vw solid #e0bc21;
+
+
+}
+
+
+.my-col3-4-1{
+    border-right: 1vw solid #e0bc21;
+
+}
+
+
+
+.timeline-text{
+
+    font-size: 1vw;
+    font-family: 'Indie Flower', cursive;  
+    box-shadow: 3px 3px 10px #424242;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background-color: #FFFFFF;
+
+}
+
+.solid {
+    background: #e0bc21;
+    opacity: 1;
+    transform: 0.5s;
+}
+
+.white{
+    color: #ffffff !important;
+}
+
+.carousel-inner img{
+
+    max-height: 25vh;
+}
+
+#multiCarousel{
+
+    padding: 5vh;
+
+}
+
+#multiCarousel2{
+
+    padding: 5vh;
+
+}
+
+#hidden-1 img{
+
+    padding: 1vw;
+    float: right;
+}
+
+#hidden-2 img{
+
+    padding: 1vw;
+    float: right;
+}
+
+#hidden-3{
+
+    padding: 5vh;
+}
+
+#hidden-3 img{
+
+    padding: 1vw;
+}
+
+#hidden-4 p{
+
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1vw;
+    font-family: 'Indie Flower', cursive;
+    padding: 2vw;
+
+}
+
+#hidden-4 button{
+
+    margin: 1.5vw;
+}
