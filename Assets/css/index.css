@@ -142,6 +142,10 @@ body{
     box-shadow: unset;
 }
 
+.margin{
+    margin-left: unset;
+}
+
 }
 
 @media only screen and (min-width: 768px){
@@ -154,6 +158,10 @@ body{
     box-shadow: inset 1.3vw 0 0 0 #ffcb8f;
 }
 
+.margin{
+    margin-left: 2%;
+}
+
 }
 
 #timeline{
@@ -161,6 +169,16 @@ body{
     z-index: 1;
     font-family: 'Press Start 2P', cursive;
     font-weight: bold;
+}
+
+#timeline .fa-play-circle{
+    font-size: 3rem;
+    margin: 2%;
+    color: #000000;
+}
+
+#timeline .fa-play-circle:hover{
+    color: #59ff59;
 }
 
 .shadowLine{
@@ -234,7 +252,6 @@ body{
 
 #intro-2006 div{
     height: 100%;
-    margin-left: 2%;
 }
 
 #intro-2006:hover{
