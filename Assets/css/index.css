@@ -174,7 +174,6 @@ body{
 #timeline .fa-play-circle{
     font-size: 3rem;
     margin: 2%;
-    color: #000000;
 }
 
 #timeline .fa-play-circle:hover{
@@ -187,7 +186,7 @@ body{
 }
 
 #timeline-1992{
-    height: 50vh;
+    min-height: 50vh;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }
@@ -222,10 +221,15 @@ body{
 
 #oldTape-1992 img{
     width: 30%;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 5%;
     border-radius: 5%;
 }
+
+#oldTape-1992 i{
+    margin-bottom: 5%;
+}
+
 
 #oldTape-1992 .fa-stop:hover{
     color: #ce513b;
@@ -236,7 +240,7 @@ body{
 }
 
 #timeline-2006{
-    height: 50vh;
+    min-height: 50vh;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }
@@ -259,7 +263,7 @@ body{
 }
 
 #timeline-2017{
-    height: 50vh;
+    min-height: 50vh;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }
@@ -282,7 +286,7 @@ body{
 }
 
 #timeline-2018{
-    height: 50vh;
+    min-height: 50vh;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }
@@ -305,8 +309,33 @@ body{
     opacity:0.8;
 }
 
+#hiddenbox-2018{
+    min-height: 50vh;
+    background-image: url("../images/old-tv/tv-no-signal-2.gif");
+    background-repeat: repeat;
+    background-position: center;
+    color: #ffffff;
+}
+
+#hiddenbox-2018-cover{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #000000;
+}
+
+.hiddenBoxText{
+    height: 100%;
+    padding: 4%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#hiddenbox-2018 button{
+    margin: 1%;
+}
+
 #timeline-2019{
-    height: 50vh;
+    min-height: 50vh;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }

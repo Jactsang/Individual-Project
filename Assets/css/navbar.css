@@ -15,7 +15,7 @@
     transition: .5s;
 }
 
-.white{
+.wineRed{
     background-color: #3b0000!important; 
 }
 
@@ -28,7 +28,7 @@
 }
 
 .navbar-toggler{
-    border-color: #1486cc!important;
+    border-color: #ffffff!important;
 }
 
 .fa-bars{

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--AOS animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P|Ubuntu+Mono&display=swap"
         rel="stylesheet">
@@ -82,8 +84,7 @@
     <div class="container-fluid" id="timeline">
 
         <!-- 1992 -->
-        <!-- entry to 1992 hidden box-->
-        <div class="row" id="timeline-1992">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-1992">
             <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-1992">
                 <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
                     <p class="mx-2 year">1992</p>
@@ -102,14 +103,9 @@
                 </div>
             </div>
         </div>
-        <!-- 1992 hidden box-->
-        <div class="row">
-
-        </div>
 
         <!-- 2006 -->
-        <!-- entry to 2006 hidden box-->
-        <div class="row" id="timeline-2006">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2006">
             <div class="col-12 col-sm-12 offset-md-6 col-md-6 shadowLineRight" id="intro-2006">
                 <div
                     class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-start margin">
@@ -119,14 +115,8 @@
             </div>
         </div>
 
-        <!-- 2006 hidden box-->
-        <div class="row">
-
-        </div>
-
         <!-- 2017 -->
-        <!-- entry to 2017 hidden box-->
-        <div class="row" id="timeline-2017">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2017">
             <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-2017">
                 <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
                     <p class="mx-2 year">2017</p>
@@ -134,29 +124,44 @@
                 </div>
             </div>
         </div>
-        <!-- 2017 hidden box-->
-        <div class="row">
-
-        </div>
 
         <!-- 2018 -->
         <!-- entry to 2018 hidden box-->
-        <div class="row" id="timeline-2018">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2018">
             <div class="col-12 col-sm-12 offset-md-6 col-md-6 shadowLineRight" id="intro-2018">
                 <div
                     class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-start margin">
                     <p class="mx-2 year">2018</p>
                     <p class="mx-2">Tried to develop my career in marketing</p>
+                    <span class="far fa-play-circle"></span>
                 </div>
             </div>
         </div>
         <!-- 2018 hidden box-->
-        <div class="row">
-
+        <div class="row" id="hiddenbox-2018">
+            <div class="col-12" id="hiddenbox-2018-cover">
+                <div class="row justify-content-center flex-column align-items-center hiddenBoxText">
+                    <p class="text-justify text-wrap">
+                        I was a marketing person. 
+                        <br>In my previous company, I got the chance to manage the
+                        company website. 
+                        <br>At the time, we used Wordpress for content management 
+                        <br>which was expected to be very user friendly to any non-IT guy. 
+                        <br>However, the system seemed to have many problems behind 
+                        <br>and using codes was the only way to manage the content structure properly.
+                        <br>It pushed me to learn some basic website languages in order to maintain daily work routine.
+                        <br>Since then, it opened a new door for me to get to know more about programming, 
+                        <br>even it was just a glance to this new world. 
+                        <br>It started to grow on me and I want to know more about it in a more professional way.  
+                        <br><br>This is how I began my journey in software engineering.
+                    </p>
+                    <button class="btn btn-outline-light">close</button>
+                </div>
+            </div>
         </div>
 
         <!-- 2019 -->
-        <div class="row" id="timeline-2019">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2019">
             <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-2019">
                 <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
                     <p class="mx-2 year">2019</p>
@@ -165,7 +170,7 @@
             </div>
         </div>
         <!-- after 2019 -->
-        <div class="row" id="after-2019">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="after-2019">
             <div class="col-1 col-sm-1 col-md-6 shadowLine"></div>
         </div>
     </div>
@@ -200,6 +205,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!--AOS animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- smooth scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <!--custom js-->
@@ -207,6 +214,7 @@
     <script src="./Assets/js/navbar.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
+        AOS.init();
     </script>
 </body>
 

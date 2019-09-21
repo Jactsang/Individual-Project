@@ -16,9 +16,9 @@ $(window).scroll(function () {
 
     // add 'white' class on scroll
     if ($(window).scrollTop()) {
-        $('nav').addClass('white')
+        $('nav').addClass('wineRed')
     } else {
-        $('nav').removeClass('white')
+        $('nav').removeClass('wineRed')
     }
 
     var scrollLocation = $(this).scrollTop();
@@ -32,9 +32,23 @@ $(window).scroll(function () {
 
         // console.log('currentOffset ', currentOffset)
 
-        if (currentOffset - 350 <= scrollLocation) {
+        if (currentOffset - 600 <= scrollLocation) {
             $('.nav-item').removeClass('active');
             $(this).parent().addClass('active');
         }
     });
+
 })
+
+// change setting if navbar-toggler is clicked
+
+$(".navbar-toggler").click(function(){
+    if($("nav").hasClass('wineRed')){
+        $("nav").removeClass('wineRed')
+        $(".navbar").css('height','8vh')
+    }else{
+        $("nav").addClass('wineRed')
+        $(".navbar").css('height','40vh')
+    }
+})
+
