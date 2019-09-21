@@ -1,0 +1,36 @@
+/* navbar settings */
+
+.navbar{
+    height: 8vh;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.navbar a{
+    color: #ffffff;
+}
+
+.navbar li{
+    border-top: 1px solid #ffffff;
+    transition: .5s;
+}
+
+.white{
+    background-color: #3b0000!important; 
+}
+
+.active{
+    background-color: #ffffff;
+}
+
+.active a{
+    color: #000000!important;
+}
+
+.navbar-toggler{
+    border-color: #1486cc!important;
+}
+
+.fa-bars{
+    color: #ffffff!important;
+}

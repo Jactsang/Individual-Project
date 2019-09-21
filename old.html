@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--icon lib: fontawesome-->
+    <script src="https://kit.fontawesome.com/ecb3308fb7.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--MDB
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">-->
+    <!--private css-->
+    <link rel="stylesheet" href="./css.css">
+    <title>Time Machine</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Top Section-->
+    <!---<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+            <div class="container">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                   <span style="font-size:3vw; color: #FFFFFF;"><i class="fas fa-bars"></i></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Features</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Pricing</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           </nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbar"
+            aria-controls="navbarbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="font-size:3vw; color: #000000;"><i class="fas fa-bars"></i></span>
+        </button>
+        <!-- Nav bar items -->
+        <div class="collapse navbar-collapse" id="navbarbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#timeline">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container col container-fluid topSection">
+        <div class="row my-row">
+            <div class="col-12 my-col d-flex justify-content-center align-items-center flex-column">
+                <h2><span>Hello</span>, I'm Jac<span>qu</span>elin<span>e</span>.</h2>
+                <p>Ready to travel in time with me?</p>
+                <a data-scroll href="#timeline"><span style="font-size: 3vw; color: #ffffff;" id="playbutton">
+                    <i class="far fa-play-circle"></i>
+                </span></a>
+            </div>
+
+        </div>
+
+    </div>
+    <!--old tv effect-->
+
+    <div class="container col container-fluid">
+        <div class="row my-row2">
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./tv-no-signal.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./tv-no-signal-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./old-tv-effect.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./green-tv-effect.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./tv-no-signal-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-2 embed-responsive embed-responsive-4by3 my-col">
+                <video class="embed-responsive-item" autoplay loop muted>
+                    <source src="./tv-no-signal.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Timeline-->
+    <section id="timeline">
+        <div class="container col container-fluid">
+            <!-- 1992 -->
+            <div class="row my-row3">
+                <div class="col-6 my-col3-1-1 timebox d-flex justify-content-center align-items-end flex-column"
+                    data-aos="fade-right">
+                    <p class="year">1992</p>
+                    <p class="timeline-text" style="text-align:right; height: auto;">I was borned two weeks after
+                        Aladdin (1992) was released.
+                    </p>
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="button1992">See what happened
+                        there</button>
+                </div>
+                <div class="col-6 my-col3-1-2">
+                </div>
+            </div>
+            <!-- hidden block 1 -->
+            <div class="row" id="hidden-1" style="background-color: #000000;">
+                <div class="col-11">
+                    <div id="multiCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#multiCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#multiCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" data-size="1600x1067">
+                                            <img src="./aladdin.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./sister-act.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <center><img src="./home-alone.jpg" alt="Image" style="max-width:100%;">
+                                            </center>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./whitney.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" data-size="1600x1067">
+                                            <img src="./justice-my-foot.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./royal tramp.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./sailor-moon.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./Me.jpeg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="1992back">Go Back</button>
+                </div>
+            </div>
+            <!-- 2004 -->
+            <div class="row my-row3">
+                <div class="col-6  my-col3-2-1" data-aos="fade-left">
+                </div>
+                <div class="col-6 my-col3-2-2 timebox d-flex justify-content-center align-items-start flex-column"
+                    data-aos="fade-left">
+                    <p class="year">2004</p>
+                    <p class="timeline-text" style="text-align:left; height: auto;">Got my first NDS =D</p>
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="button2004">See what happened
+                        there</button>
+                </div>
+            </div>
+            <!-- hidden block 2 -->
+            <div class="row" id="hidden-2" style="background-color: #000000;">
+                <div class="col-11">
+                    <div id="multiCarousel2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#multiCarousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#multiCarousel2" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" data-size="1600x1067">
+                                            <img src="./pheonix-wright.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./cooking-mama.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./harry-potter.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./howls.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" data-size="1600x1067">
+                                            <img src="./sailor-moon.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./incredibles.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./shrek.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./motorola.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="2004back">Go Back</button>
+                </div>
+            </div>
+            <!-- 2017-->
+            <div class="row my-row3">
+                <div class="col-6 my-col3-3-1 timebox d-flex justify-content-center align-items-end flex-column"
+                    data-aos="fade-right">
+                    <p class="year">2017</p>
+                    <p class="timeline-text" style="text-align:right;">Graduated from University</p>
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="button2017">See what happened
+                        there</button>
+                </div>
+                <div class="col-6  my-col3-3-2">
+                </div>
+            </div>
+            <!-- hidden block 3 -->
+            <div class="row" id="hidden-3" style="background-color: #000000;">
+                <div class="col-11">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" data-size="1600x1067">
+                                <img src="./polyu.jpg" alt="Image" style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img src="./graduated.jpg" alt="Image" style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img src="./mtr-crowd.jpg" alt="Image" style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img src="./babygroot.jpeg" alt="Image" style="max-width:100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="2017back">Go Back</button>
+                </div>
+            </div>
+            <!-- 2018-->
+            <div class="row my-row3">
+                <div class="col-6 my-col3-4-1" data-aos="fade-left">
+                </div>
+                <div class="col-6 my-col3-4-2 timebox d-flex justify-content-center align-items-start flex-column"
+                    data-aos="fade-left">
+                    <p class="year">2018</p>
+                    <p class="timeline-text">Tried to develop my career in marketing</p>
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="button2018">See what happened
+                        there</button>
+                </div>
+            </div>
+            <!-- hidden block 4 -->
+            <div class="row" id="hidden-4" style="background-color: #000000;">
+                <div class="col d-flex justify-content-center align-items-center flex-column">
+                    <p>I was a marketing person. In my previous company, I got the chance to manage the
+                        company website.
+                        <br>At the time, we used Wordpress for content management which was expected to be very user
+                        friendly to any non-IT guy.
+                        <br>However, the system seemed to have many problems behind
+                        <br>and using codes was the only way to manage the content structure properly.
+                        <br>It forced me to learn some basic website languages in order to maintain daily work routine.
+                        <br>Honestly, it did open a new door for me to get to know more about programming, even it was
+                        just a glance to this new word
+                        <br>It started to grow on me, and I want to know more about it in a more professional way.</p>
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="2018back">Go Back</button>
+                </div>
+            </div>
+            <!-- 2019 -->
+            <div class="row my-row3">
+                <div class="col my-col3-5 timebox d-flex justify-content-center align-items-center flex-column">
+                    <p class="year" data-aos="flip-up" style="font-size: 4vw; color:#e0bc21;">2019</p>
+                    <p class="timeline-text" data-aos="flip-up">Study software engineering at Xccelerate</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact me-->
+
+    <div class="container col container-fluid" id="contact">
+        <div class="row my-row4">
+            <div class="col-md-6 col-12 d-flex justify-content-center flex-column align-items-center my-col">
+                <a href="https://www.instagram.com/jac_tsang/" target="_blank"><span
+                        style="font-size: 2vw; color: #FFFFFF;">
+                        <i class="fab fa-instagram wow animated tada infinite"></i></a>
+                </span>
+                <a href="" target="_blank"></a>
+                <p>Follow my instagram</p></a>
+            </div>
+            <div class="col-md-6 col-12 d-flex justify-content-center flex-column align-items-center my-col">
+                <a href="mailto:jac.tsang.work@gmail.com" target="_blank"><span style="font-size: 2vw; color: #FFFFFF;">
+                        <i class="far fa-envelope wow animated tada infinite"></i></a>
+                </span>
+                <p>Send me email</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Smooth scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- MDB
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>-->
+    <!--private js -->
+    <script src="./js.js"></script>
+</body>
+
+
+
+</html>
