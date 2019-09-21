@@ -197,6 +197,26 @@ body{
     text-shadow: 1px 1px #ffffff;
 }
 
+#oldTape-1992{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+#oldTape-1992 img{
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+}
+
+#oldTape-1992 .fa-stop:hover{
+    color: #ce513b;
+}
+
+#oldTape-1992 .fa-play:hover{
+    color: #b7f89d;
+}
+
 #timeline-2006{
     height: 50vh;
     color: #ffffff;
