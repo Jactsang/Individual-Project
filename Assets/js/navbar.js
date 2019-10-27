@@ -43,12 +43,12 @@ $(window).scroll(function () {
 // change setting if navbar-toggler is clicked
 
 $(".navbar-toggler").click(function(){
-    if($("nav").hasClass('wineRed')){
-        $("nav").removeClass('wineRed')
-        $(".navbar").css('height','8vh')
+    if($("#navigation").hasClass('wineRed')){
+        $("#navigation").removeClass('wineRed')
+        $(".navbar").css('height','10vh')
     }else{
-        $("nav").addClass('wineRed')
-        $(".navbar").css('height','40vh')
+        $("#navigation").addClass('wineRed')
+        $(".navbar").css('height','50vh')
     }
 })
 
