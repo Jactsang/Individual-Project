@@ -11,15 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--AOS animation-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P|Ubuntu+Mono&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P|Rokkitt|Ubuntu+Mono&display=swap"
         rel="stylesheet">
     <!--private css-->
     <link rel="stylesheet" href="./Assets/css/index.css">
     <link rel="stylesheet" href="./Assets/css/navbar.css">
-    <title>Time Machine</title>
+    <title>Jac's Time Machine</title>
 </head>
 
 <body>
@@ -37,19 +35,16 @@
                     <a class="nav-link scroll" data-scroll href="/#top-description">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll" data-scroll href="/#timeline-1992">1992</a>
+                    <a class="nav-link scroll" data-scroll href="/#timeline">Play</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll" data-scroll href="/#timeline-2006">2006</a>
+                    <a class="nav-link scroll" data-scroll href="/#about-me">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll" data-scroll href="/#timeline-2017">2017</a>
+                    <a class="nav-link scroll" data-scroll href="/#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll" data-scroll href="/#timeline-2018">2018</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scroll" data-scroll href="/#timeline-2019">2019</a>
+                    <a class="nav-link scroll" data-scroll href="/#projects">Project History</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link scroll" data-scroll href="/#contact-me">Contact Me</a>
@@ -82,97 +77,174 @@
 
     <!--Timeline-->
     <div class="container-fluid" id="timeline">
-
         <!-- 1992 -->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-1992">
-            <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-1992">
-                <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
-                    <p class="mx-2 year">1992</p>
-                    <p class="mx-2">I was borned after the Disney movie Aladdin was released</p>
-                    <span class="far fa-play-circle"></span>
+        <div class="row" id="timeline-1992">
+            <div class="col-12 col-sm-12 col-md-6" id="intro-1992">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="year">1992</div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6" id="oldTape-1992">
-                <div class="row justify-content-center flex-column align-items-center">
-                    <audio id="audio-1992">
-                        <source src="./Assets/audio/aladdin-song.mp3">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <img src="Assets/images/timeline/old-tape.gif">
-                    <i class="fas fa-stop"></i>
+            <div class="col-12 col-sm-12 col-md-6 timelineText">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div>I was borned after the Disney movie Aladdin was released.</div>
                 </div>
             </div>
         </div>
 
         <!-- 2006 -->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2006">
-            <div class="col-12 col-sm-12 offset-md-6 col-md-6 shadowLineRight" id="intro-2006">
-                <div
-                    class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-start margin">
-                    <p class="mx-2 year">2006</p>
-                    <p class="mx-2">Became the Chairman of Board Game Club</p>
+        <div class="row flex-column-reverse flex-md-row" id="timeline-2006">
+            <div class="col-12 col-sm-12 col-md-6 timelineText">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div>Became the Chairman of Board Game Club</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6" id="intro-2006">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="year">2006</div>
                 </div>
             </div>
         </div>
 
         <!-- 2017 -->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2017">
-            <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-2017">
-                <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
-                    <p class="mx-2 year">2017</p>
-                    <p class="mx-2">Graduated from University</p>
+        <div class="row" id="timeline-2017">
+            <div class="col-12 col-sm-12 col-md-6" id="intro-2017">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="year">2017</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 timelineText">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div>Graduated from University</div>
                 </div>
             </div>
         </div>
-
         <!-- 2018 -->
         <!-- entry to 2018 hidden box-->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2018">
-            <div class="col-12 col-sm-12 offset-md-6 col-md-6 shadowLineRight" id="intro-2018">
-                <div
-                    class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-start margin">
-                    <p class="mx-2 year">2018</p>
-                    <p class="mx-2">Tried to develop my career in marketing</p>
-                    <span class="far fa-play-circle"></span>
+        <div class="row flex-column-reverse flex-md-row" id="timeline-2018">
+            <div class="col-12 col-sm-12 col-md-6 timelineText">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div>Tried to develop my career in marketing</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6" id="intro-2018">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="year">2018</div>
                 </div>
             </div>
         </div>
         <!-- 2018 hidden box-->
-        <div class="row" id="hiddenbox-2018">
+        <!-- <div class="row" id="hiddenbox-2018">
             <div class="col-12" id="hiddenbox-2018-cover">
                 <div class="row justify-content-center flex-column align-items-center hiddenBoxText">
                     <p class="text-justify text-wrap">
-                        I was a marketing person. 
-                        <br>In my previous company, I got the chance to manage the
-                        company website. 
-                        <br>At the time, we used Wordpress for content management 
-                        <br>which was expected to be very user friendly to any non-IT guy. 
-                        <br>However, the system seemed to have many problems behind 
-                        <br>and using codes was the only way to manage the content structure properly.
-                        <br>It pushed me to learn some basic website languages in order to maintain daily work routine.
-                        <br>Since then, it opened a new door for me to get to know more about programming, 
-                        <br>even it was just a glance to this new world. 
-                        <br>It started to grow on me and I want to know more about it in a more professional way.  
-                        <br><br>This is how I began my journey in software engineering.
+                        2 years ago, I was a marketing person. In my previous company, I got the chance to manage thecompany website, even I had zero IT background. It pushed me to learn some basic website languages in order to maintain the website. Since then, it opened a new door for me to get to know more about programming, even it was just a glance to this new world. Programming started to grow on me and I want to learn more about it in a more professional way.
                     </p>
+                    <p>This is how I began my journey in software engineering.</p>
                     <button class="btn btn-outline-light">close</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 2019 -->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="timeline-2019">
-            <div class="col-12 col-sm-12 col-md-6 shadowLineLeft" id="intro-2019">
-                <div class="row flex-column align-items-start flex-md-column justify-content-md-end align-items-md-end">
-                    <p class="mx-2 year">2019</p>
-                    <p class="mx-2">Study software engineering at Xccelerate</p>
+        <div class="row" id="timeline-2019">
+            <div class="col-12 col-sm-12 col-md-6" id="intro-2019">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="year-2019">2019</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 timelineText">
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div>Studied software engineering at Xccelerate</div>
                 </div>
             </div>
         </div>
-        <!-- after 2019 -->
-        <div class="row" data-aos="fade-down" data-aos-duration="1000" id="after-2019">
-            <div class="col-1 col-sm-1 col-md-6 shadowLine"></div>
+    </div>
+
+    <!-- About Me -->
+    <div class="container-fluid" id="about-me">
+        <div class="row">
+            <div class="typewrite" data-period="2000"
+                data-type='[ "Hello, World!", "I am Jac.", "I am Software Engineer."]'>
+                <span class="wrap"></span>
+            </div>
         </div>
+        <div class="row">
+            <p>
+                2 years ago, I was a marketing person. In my previous company, I got the chance to manage thecompany
+                website, even I had zero IT background. It pushed me to learn some basic website languages in order to
+                maintain the website. Since then, it opened a new door for me to get to know more about programming,
+                even it was just a glance to this new world. Programming started to grow on me and I want to learn more
+                about it in a more professional way.
+            </p>
+            <p>This is how I began my journey in software engineering.</p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="container-fluid" id="skills">
+            <div class="row justify-content-center flex-column align-items-center" id="skills-head">
+                    My Skills
+                </div>
+        <div class="row justify-content-center align-items-center" id="skillsContent">
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-3 offset-md-3 skillsCard">
+                <p class="skillsHeading"><i class="fas fa-code"></i> Language</p>
+                <p class="skillsItem">HTML</p>
+                <p class="skillsItem">CSS</p>
+                <p class="skillsItem">JavaScript</p>
+                <p class="skillsItem">JQuery</p>
+                <p class="skillsItem">JQueryUI</p>
+                <p class="skillsHeading"><i class="fas fa-paint-roller"></i> Design Tools</p>
+                <p class="skillsItem">Photoshop</p>
+            </div>
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-3 skillsCard">
+                <p class="skillsHeading"><i class="fas fa-tools"></i> Dev Tools</p>
+                <p class="skillsItem">React</p>
+                <p class="skillsItem">React Native</p>
+                <p class="skillsItem">Node.js</p>
+                <p class="skillsItem">Bootstrap</p>
+                <p class="skillsItem">Ubuntu</p>
+                <p class="skillsItem">PostgreSQL</p>
+                <p class="skillsItem">PostgreSQL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="container-fluid" id="projects">
+        <div class="row justify-content-center flex-column align-items-center" id="projects-head">
+            Project History
+        </div>
+        <div class="row projectsItem">
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-4 offset-md-1">
+                <a href="https://hktech1.best/" target="_blank">
+                    <img class="thumbnail" src="./Assets/images/projects/agentCRM.png" alt="project-thumbnail">
+                </a>
+            </div>
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 projectIntro">
+                <p class="projectName">AgencyCRM - Property Agency Network Applcation</p>
+                <p class="projectDescription text-justify">It is a web app providing mutual networking service between
+                    property agencies and real estate investers. Both parties can access and store massive data in the
+                    property market online, so as to manage business and investment in an efficient manner.</p>
+                <p class="projectSkills">Skills involved: HTML, CSS, JavaScirpt, JQuery, JQuery UI, Bootstrap, Google API, PostgreSQL, etc.</p>
+            </div>
+        </div>
+        <hr class="projectDivider" />
+        <div class="row projectsItem">
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-4 offset-md-1">
+                <a href="https://jactsang.github.io/Canvas-Project/" target="_blank">
+                    <img class="thumbnail" src="./Assets/images/projects/canvas.png" alt="project-thumbnail">
+                </a>
+            </div>
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 projectIntro">
+                <p class="projectName">Online Drawing Application</p>
+                <p class="projectDescription text-justify">It is an online app simulating Microsoft Paint, which offers
+                    a broad
+                    range of features like drawing straight line, rectangle, stickers and more. Image can also be
+                    downloaded in PNG format.</p>
+                <p class="projectSkills">Skills involved: HTML, Canvas, CSS, etc.</p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- contact me-->
@@ -194,8 +266,6 @@
         </div>
     </div>
 
-
-
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--bootstrap-->
@@ -205,16 +275,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!--AOS animation-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- smooth scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- anime -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!--custom js-->
     <script src="./Assets/js/index.js"></script>
     <script src="./Assets/js/navbar.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
-        AOS.init();
     </script>
 </body>
 
